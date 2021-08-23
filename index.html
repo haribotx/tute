@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="css/theme/source/quiz.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="convex">
+					<div style="width: 1056px; height: 500px">
+					<h1>What is HTML?
+					</h1>
+					
+						<ul>
+							
+<li> stands for Hyper Text Markup Language</li>
+<li>HTML is the standard markup language for creating Web pages</li>
+<li>HTML describes the structure of a Web page</li>
+<li>HTML consists of a series of elements</li>
+<li>HTML elements tell the browser how to display the content</li>
+<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+
+						</ul>
+				
+					
+					</div>
+				</section>
+				<section>
+					<div style="width: 1056px; height: 500px">
+					<h2>A Simple HTML Document
+					</h2>
+					<pre><code><script type="text/template">
+						<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+						
+						</script></code></pre>
+				</section>
+				<section data-transition="concave" data-transition-speed="slow">
+					<div style="width: 1056px; height: 300px">
+						  <h1>Slide</h1>
+						  <h2>lorejsxbs xskbsjj xbsb</h2>
+					</div>
+					<div style="width: 1056px; height: 200px; text-align: left">
+						  Brought to you by,<br/>
+						  YOUR-NAME<br/>
+					</div>
+					<aside class="notes">Here are notes: Welcome to the workshop!</aside>
+			  </section>
+			  <section data-transition="zoom">
+			  <pre><code data-line-numbers="3,8-10">
+				<table>
+				  <tr>
+					<td>Apples</td>
+					<td>$1</td>
+					<td>7</td>
+				  </tr>
+				  <tr>
+					<td>Oranges</td>
+					<td>$2</td>
+					<td>18</td>
+				  </tr>
+				</table>
+				</code></pre>
+			</section>
+			<section>
+				<div id="container">
+					<div id="start">Start Quiz!</div>
+					<div id="quiz" style="display: none">
+						<div id="question"></div>
+						<div id="qImg"></div>
+						<div id="choices">
+							<div class="choice" id="A" onclick="checkAnswer('A')"></div>
+							<div class="choice" id="B" onclick="checkAnswer('B')"></div>
+							<div class="choice" id="C" onclick="checkAnswer('C')"></div>
+						</div>
+						<div id="timer">
+							<div id="counter"></div>
+							<div id="btimeGauge"></div>
+							<div id="timeGauge"></div>
+						</div>
+						<div id="progress"></div>
+					</div>
+					<div id="scoreContainer" style="display: none"></div>
+				</div>
+			  </section>
+			  <section><h1>Examples</h1></section>
+			  <section>
+				<section data-background-image="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" 
+				data-background-size="100px" data-background-repeat="repeat">
+					<pre><code data-trim data-noescape>
+						(def lazy-fib
+						  (concat
+						   [0 1]
+						   ((fn rfib [a b]
+								(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+						  </code></pre>
+						  <pre><code data-trim data-noescape>
+							(def lazy-fib
+							  (concat
+							   [0 1]
+							   ((fn rfib [a b]
+									(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+							  </code></pre>
+
+				</section>
+				<section><section data-background-image="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" 
+					data-background-size="100px" data-background-repeat="repeat">
+						<pre><code data-trim data-noescape>
+							(def lazy-fib
+							  (concat
+							   [0 1]
+							   ((fn rfib [a b]
+									(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+							  </code></pre>
+							  <pre><code data-trim data-noescape>
+								(def lazy-fib
+								  (concat
+								   [0 1]
+								   ((fn rfib [a b]
+										(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+								  </code></pre></section>
+			  </section>
+			  </section>
+			  <section>
+				<video
+				id="my-video"
+				class="video-js"
+				controls
+				preload="auto"
+				width="750"
+				height="500"
+				poster="MY_VIDEO_POSTER.jpg"
+				data-setup="{}"
+			  >
+				<source src="What is JavaScript_ ( 480 X 854 ).mp4" type="video/mp4" />
+				
+				<p class="vjs-no-js">
+				  To view this video please enable JavaScript, and consider upgrading to a
+				  web browser that
+				  <a href="https://videojs.com/html5-video-support/" target="_blank"
+					>supports HTML5 video</a
+				  >
+				</p>
+			  </video>
+			  </section>
+			  <section>
+				  <h1>Thank you</h1>
+			  </section>
+
+			</div>
+		</div>
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src=plugin/markdown/marked.js></script>
+		<script> src="plugin/markdown/markdown.js"</script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="dist/quiz.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+	</body>
+</html>
